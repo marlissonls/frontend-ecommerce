@@ -21,6 +21,8 @@ const Head = props => {
         <meta property="twitter:image" content={props.ogImage || defaultOGImage} />
         <meta property="og:image:width" content="600" />
         <meta property="og:image:height" content="600" />
+        <link rel="stylesheet" href="/static/font-awesome.min.css" />
+        { props.children }
     </NextHead>
 }
 
