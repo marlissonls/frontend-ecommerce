@@ -6,7 +6,7 @@ import { initStore } from '../redux';
 class Principal extends App {
     static async getInitialProps({ Component, ctx }) {
         return {
-            pageProps: Component.getInitialProps ? await Component.getInitialProps() : {}
+            pageProps: Component.getInitialProps ? await Component.getInitialProps(ctx) : {}
         }
     }
 
