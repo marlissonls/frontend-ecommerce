@@ -3,6 +3,7 @@ import React from 'react';
 import Logo from '../../components/Logo/Cabecalho';
 import CampoPesquisa from '../../components/Campos/Pesquisa';
 import CardCarrinho from '../../components/Cards/Carrinho';
+import Categorias from '../../components/Listas/Categorias';
 
 class Cabecalho extends React.Component {
     renderCabecalhoNormal() {
