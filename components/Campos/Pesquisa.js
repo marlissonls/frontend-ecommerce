@@ -17,10 +17,7 @@ class Pesquisa extends Component {
                     placeholder="Digite aqui a sua pesquisa..."
                     className="input-pesquisa"
                 />
-                <button
-                    onClick={() => this.submitPesquisa()}
-                    className="button-pesquisa"
-                >
+                <button className="button-pesquisa" onClick={() => this.submitPesquisa()}>
                     <i className="fa fa-search"></i>
                 </button>
             </div>

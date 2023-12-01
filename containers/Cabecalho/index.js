@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 import Logo from '../../components/Logo/Cabecalho';
 import CampoPesquisa from '../../components/Campos/Pesquisa';
@@ -31,8 +30,8 @@ class Cabecalho extends React.Component {
     render(){
         const { simples } = this.props;
         return simples ?
-                this.renderCabecalhoNormal() :
-                this.renderCabecalhoSimples()
+                this.renderCabecalhoSimples() :
+                this.renderCabecalhoNormal()
     }
 }
 
