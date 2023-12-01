@@ -10,7 +10,7 @@ export default class Index extends Component {
     render() {
         return (
             <Layout title="LOJA IT - Melhores produtos de informática">
-                <Cabecalho simples />
+                <Cabecalho simples={false} />
                 {/* <Banners />
                 <Beneficios />
                 <ProdutosPaginaInicial />

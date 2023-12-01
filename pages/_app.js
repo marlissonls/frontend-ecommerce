@@ -1,22 +1,24 @@
 import { Provider } from 'react-redux';
 import App from 'next/app';
-import withRedux from 'next-redux-wrapper';
+import { createWrapper } from 'next-redux-wrapper';
 import { initStore } from '../redux';
 
 class Principal extends App {
     static async getInitialProps({ Component, ctx }) {
         const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
-        return { pageProps }
+        return { pageProps };
     }
 
     render() {
-        const { Component, pageProps, store } = this.props;
-        return(
-            <Provider store={store}>
+        const { Component, pageProps } = this.props;
+        return (
+            <Provider store={this.props.store || initStore()}>
                 <Component {...pageProps} />
             </Provider>
-        )
+        );
     }
 }
 
-export default withRedux(initStore)(Principal);
+const wrapper = createWrapper(initStore);
+
+export default wrapper.withRedux(Principal);
