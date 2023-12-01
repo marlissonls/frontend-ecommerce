@@ -5,9 +5,14 @@ export default () => (
         body {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         body, * {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        
+        a {
+            text-decoration: none;
         }
 
         .flex { display: flex; }
@@ -20,24 +25,13 @@ export default () => (
         }
 
         .Header {
-            max-height: 100px;
+            max-height: 150px;
         }
 
-        .header-wrapper {
-            max-width: 1200px;
-            margin: 0 auto;
+        .header-wrapper, .categorias {
+            margin: 0;
             width: 100%;
             display: flex;
-        }
-
-        @media screen and (max-width: 720px) {
-            .header-wrapper {
-                flex-direction: column;
-            }
-
-            .Header {
-                max-height: 200px;
-            }
         }
 
         .logo {
@@ -87,6 +81,55 @@ export default () => (
             margin-left: -15px;
             position: relative;
             top: -15px;
+        }
+
+        .categorias {
+            justify-content: space-betwen;
+        }
+
+        .categorias-wrapper {
+            background-color: #ffedd9;
+        }
+
+        .categoria-item {
+            padding: 10px 5px;
+            border-right: 1px solid #e87c08;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 12px;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .categoria-item:hover {
+            background-color: #e87c08;
+        }
+
+        .categorias a {
+            flex-grow: 1;
+        }
+
+        @media screen and (max-width: 720px) {
+            .Header {
+                max-height: 250px;
+            }
+
+            .header-wrapper, .categorias {
+                flex-direction: column;
+            }
+
+            .categorias {
+                overflow-x: scroll;
+                
+            }
+
+            .categoria-item {
+                border-right: 0;
+            }
+
+            .categoria-item:hover {
+                background-color: #ffedd9;
+            }
         }
     `}</style>
 )
