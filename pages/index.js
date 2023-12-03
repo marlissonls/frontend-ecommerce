@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import Cabecalho from '../containers/Cabecalho';
 import Banners from '../containers/Banners';
 import Beneficios from '../containers/Beneficios';
-// import ProdutosPaginaInicial from '../containers/Lista/ProdutosPaginaInicial';
+import ProdutosPaginaInicial from '../containers/Lista/ProdutosPaginaInicial';
 // import Rodape from '../containers/Rodape';
 
 export default class Index extends Component {
@@ -13,8 +13,8 @@ export default class Index extends Component {
                 <Cabecalho simples={false} />
                 <Banners />
                 <Beneficios />
-                {/* <ProdutosPaginaInicial />
-                <Rodape /> */}
+                <ProdutosPaginaInicial />
+                {/* <Rodape /> */}
             </Layout>
         )
     }
