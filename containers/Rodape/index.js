@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Link from 'next/link';
 
 import Paginas from '../../components/Listas/Paginas';
 import RedesSociais from '../../components/Listas/RedesSociais';
