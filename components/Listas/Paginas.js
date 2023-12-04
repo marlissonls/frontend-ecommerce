@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Paginas = () => {
+const Paginas = () => (
     <div className="flex-1 flex vertical institucional">
         <div>
             <h2>Páginas</h2>
@@ -20,6 +20,6 @@ const Paginas = () => {
             <span>Sobra a Loja</span>
         </Link>
     </div>
-}
+)
 
 export default Paginas;
