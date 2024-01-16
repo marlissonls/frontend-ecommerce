@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 
-export default class Produto extends Component {
+import Layout from '../../components/Layout';
+import Cabecalho from '../../containers/Cabecalho';
+import Produto from '../../containers/Produto';
+import Rodape from '../../containers/Rodape';
+
+export default class ProdutoPage extends Component {
     render() {
         return (
-            <div>
-                <h2>Loja IT - Produtos - Produto</h2>
-            </div>
+            <Layout title='Mouse Gamer 1 | LOJA IT - Melhores produtos de informática'>
+                <Cabecalho />
+                <Produto />
+                <Rodape />
+            </Layout>
         )
     }
 }

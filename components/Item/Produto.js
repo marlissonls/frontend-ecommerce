@@ -6,7 +6,7 @@ const formatMoney = (value) => "R$ " + (value || 0).toFixed(2).replace(".", ",")
 
 class Produto extends Component {
     render() {
-        const { item, key, porLinha } = this.props;
+        const { item, porLinha } = this.props;
         const { id, titulo, preco, promocao, fotos } = item;
         const temPromo = promocao && preco !== promocao;
         return (

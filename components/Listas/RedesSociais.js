@@ -17,7 +17,7 @@ const RedesSociais = () => (
         <div className="flex-1 flex redes-sociais wrap">
             {
                 REDES_SOCIAIS.map((item, idx) => (
-                    <div className="flex-1 flex">
+                    <div key={idx} className="flex-1 flex">
                         <Link href={item.url}>
                             <i className={`fa fa-${item.nome} fa-lg`}></i>
                         </Link>
