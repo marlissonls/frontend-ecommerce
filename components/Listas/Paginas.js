@@ -7,16 +7,16 @@ const Paginas = () => (
             <h2>Páginas</h2>
             <br />
         </div>
-        <Link href="/">
+        <Link className='pages-nav' href="/">
             <span>Página Inicial</span>
         </Link>
-        <Link href="/carrinho">
+        <Link className='pages-nav' href="/carrinho">
             <span>Ver Sacola</span>
         </Link>
-        <Link href="/area-cliente">
+        <Link className='pages-nav' href="/area-cliente">
             <span>Minha Conta</span>
         </Link>
-        <Link href="/Sobre">
+        <Link className='pages-nav' href="/Sobre">
             <span>Sobra a Loja</span>
         </Link>
     </div>

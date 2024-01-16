@@ -175,3 +175,29 @@ a {
     color: #666;
     font-size: 0.95rem;
 }
+
+/* RODAPE */
+.Rodape {
+    background-color: #111111;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.Rodape a {
+    color: #ff9600;
+}
+
+.Rodape .pages-nav {
+    color: #fff;
+}
+
+.Rodape i.fa {
+    color: #fff;
+}
+
+.Rodape h2 {
+    font-size: 1.3rem;
+    color: #ff9600;
+    font-weight: bold;
+}
+

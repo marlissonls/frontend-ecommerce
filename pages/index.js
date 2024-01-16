@@ -19,15 +19,3 @@ export default class Index extends Component {
         )
     }
 }
-
-// function Index() {
-//     return (
-//         <Layout title="LOJA IT - Melhores produtos de informática">
-//             <Cabecalho simples={false} />
-//             <Banners />
-//             <Beneficios />
-//             {/* <ProdutosPaginaInicial />
-//             <Rodape /> */}
-//         </Layout>
-//     )
-// }

@@ -16,7 +16,7 @@ class Categorias extends Component {
       const { categorias } = this.state;
     
       return (
-        <div className="categorias flex flex-center horizontal">
+        <div className="categorias flex flex-center horizontal-mb">
           {categorias.map((categoria) => (
             <Link href={`/categorias/${categoria.nome}?id=${categoria.id}`} key={categoria.id}>
               <div className="categoria-item flex-1 flex flex-center">
@@ -27,24 +27,6 @@ class Categorias extends Component {
         </div>
       );
     }
-
-    // render() {
-    //     const { categorias } = this.state;
-
-    //     return (
-    //         <div className="categorias flex flex-center horizontal">
-    //             {
-    //                 categorias.map(categoria => (
-    //                     <Link href={`/categorias/${categoria.nome}?id=${categoria.id}`}>
-    //                         <div className="categoria-item flex-1 flex flex-center">
-    //                             <span>{categoria.nome}</span>
-    //                         </div>
-    //                     </Link>
-    //                 ))
-    //             }
-    //         </div>
-    //     )
-    // }
 }
 
 export default Categorias;

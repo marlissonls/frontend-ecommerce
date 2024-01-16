@@ -77,6 +77,7 @@ export default () => (
                 max-width: calc(80%);
             }
             .horizontal-mb { flex-direction: row; }
+            .horizontal { flex-direction: column; }
         }
     `}</style>
 )
